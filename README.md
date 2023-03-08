@@ -1,6 +1,6 @@
 # Hadoop
 
-### **You can do pretty much everything using the Makefile 😎**
+### **You can do pretty much anything using the Makefile 😎**
 
 ## Creating new gradle module
 ```bash
