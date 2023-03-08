@@ -1,6 +1,6 @@
 # Hadoop
 
-You can do pretty much everything using the Makefile 😎
+### **You can do pretty much everything using the Makefile 😎**
 
 ## Creating new gradle module
 ```bash
@@ -12,7 +12,7 @@ make new PRO=<MODULE_NAME>
 make clean
 ```
 
-## ‼️‼️‼️‼️‼️‼️ Use this below command with caution‼️‼️‼️‼️‼️ to clean the input directory
+## ‼️ Use this below command with caution‼️ to clean the input directory
 ```bash
 make cleanf
 ```
@@ -26,7 +26,7 @@ make push
 ## To build the jar file and submit the jar file to hadoop
 ```bash
 make hadoop INPUT=<MODULE_NAME> ARGS=<COMMAND_LINE_ARGUMENTS>
-
+```
 
 ## Makefile template
 ```bash
