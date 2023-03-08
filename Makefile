@@ -1,4 +1,5 @@
 INPUT ?=
+PRO ?=
 
 run:
 	@ gradle run
@@ -18,3 +19,8 @@ cleanf:
 
 hadoop: build
 	@ hadoop jar ./$(INPUT)/build/libs/$(INPUT).jar /input/ev_charging.csv /out
+
+new: 
+	@ mkdir $(PRO)
+	@ cp -r template/* $(PRO)
+	@ echo "Please add your $(PRO) to the settings.gradle"
