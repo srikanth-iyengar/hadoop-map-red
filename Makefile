@@ -1,3 +1,5 @@
+INPUT ?=
+
 run:
 	@ gradle run
 
@@ -5,7 +7,14 @@ build:
 	@ gradle build --refresh-dependencies
 
 push:
-	@ hadoop fs -put ./survey_results_public.csv /input/survey_results_public.csv
+	@ hadoop fs -mkdir /input
+	@ hadoop fs -put ./ev_charging.csv /input/ev_charging.csv
+
+clean: 
+	@ hadoop fs -rm -r /out
+
+cleanf:
+	@ hadoop fs -rm -r /input
 
 hadoop: build
-	@ hadoop jar ./app/build/libs/app.jar /input/survey_results_public.csv /out
+	@ hadoop jar ./$(INPUT)/build/libs/$(INPUT).jar /input/ev_charging.csv /out

@@ -2,7 +2,6 @@ package hadoop.app;
 
 import java.io.IOException;
 
-
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -26,8 +25,8 @@ public class App {
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
         
-        job.setMapperClass(WeatherMapper.class);
-        job.setReducerClass(WeatherConditionReducer.class);
+        job.setMapperClass(CustomMapper.class);
+        job.setReducerClass(CustomReducer.class);
         
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);

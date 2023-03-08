@@ -9,17 +9,20 @@ import java.util.Arrays;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 
-public class WeatherConditionMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
-    private static final int ACCIDENT_YEAR_COLUMN_INDEX = 1;
+public class CustomMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
+    private static final int COLUMN_NO = 6;
     private final Text weatherCondition = new Text();
     private final IntWritable one = new IntWritable(1);
 
     @Override
     protected void map(LongWritable key, Text value, Context context)
     		throws IOException, InterruptedException {
-        String[] fields = value.toString().replace(";", " ").replace("-", " ").replace("\"", ",").replace(" ", ",").split(",");
-        for(int i = 0 ; i < fields.length ; i++) {
-            context.write(new Text(fields[i]), one);
-        }
+            try 
+            {
+                String[] fields = value.toString().split(",");
+                context.write(new Text("KEY"), new IntWritable(Integer.parseInt(fields[COLUMN_NO])));
+            }
+            catch(Exception e) {
+            }
     }
 }
