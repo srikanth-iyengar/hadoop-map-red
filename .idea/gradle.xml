@@ -15,9 +15,11 @@
             <option value="$PROJECT_DIR$/average" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/evenOdd" />
+            <option value="$PROJECT_DIR$/ise1" />
+            <option value="$PROJECT_DIR$/ise2" />
             <option value="$PROJECT_DIR$/list" />
+            <option value="$PROJECT_DIR$/maxElement" />
             <option value="$PROJECT_DIR$/numberOperation" />
-            <option value="$PROJECT_DIR$/template" />
             <option value="$PROJECT_DIR$/utilities" />
           </set>
         </option>
