@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'hadoop'
-include('app', 'list', 'utilities', 'numberOperation', 'evenOdd')
+include('app', 'list', 'utilities', 'numberOperation', 'evenOdd', 'average', 'maxElement')

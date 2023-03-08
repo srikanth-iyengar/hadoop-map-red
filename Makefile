@@ -28,6 +28,5 @@ new:
 	@ cp -r template/* $(PRO)
 	@ echo "Please add your $(PRO) to the settings.gradle"
 
-
 out:
 	@ hadoop fs -cat /out/part-r-00000

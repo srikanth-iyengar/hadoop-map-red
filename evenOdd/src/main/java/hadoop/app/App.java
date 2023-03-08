@@ -25,7 +25,7 @@ public class App {
         Job job = new Job(conf);
         
         job.setJarByClass(App.class);
-        job.setJobName("Weather condition");
+        job.setJobName("Even Odd");
 
         
         FileInputFormat.addInputPath(job, new Path(args[0]));

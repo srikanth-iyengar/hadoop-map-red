@@ -10,7 +10,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 
 public class CustomMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
-    private static final int COLUMN_NO = 6;
+    private static final int COLUMN_NO = 4;
     private final Text weatherCondition = new Text();
     private final IntWritable one = new IntWritable(1);
 
