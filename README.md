@@ -28,6 +28,11 @@ make push
 make hadoop INPUT=<MODULE_NAME> ARGS=<COMMAND_LINE_ARGUMENTS>
 ```
 
+## If you really want to see the output of what you have done just do
+``` bash 
+make out 
+```
+
 ## Makefile template
 ```bash
 INPUT ?=
