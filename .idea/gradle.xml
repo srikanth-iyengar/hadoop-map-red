@@ -7,7 +7,6 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$USER_HOME$/.sdkman/candidates/gradle/current" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -17,8 +16,10 @@
             <option value="$PROJECT_DIR$/evenOdd" />
             <option value="$PROJECT_DIR$/ise1" />
             <option value="$PROJECT_DIR$/ise2" />
+            <option value="$PROJECT_DIR$/ise3" />
             <option value="$PROJECT_DIR$/list" />
             <option value="$PROJECT_DIR$/maxElement" />
+            <option value="$PROJECT_DIR$/niraj" />
             <option value="$PROJECT_DIR$/numberOperation" />
             <option value="$PROJECT_DIR$/utilities" />
           </set>
